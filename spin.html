@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Spin element</title>
+	<style type="text/css">
+		.spindiv {
+			width: 500px;
+			height: 400px;
+			
+		    position: absolute;
+		    top: 50%;
+		    right: 20%;
+		    transform: translate(-30%, -50%);
+		    display: inline-block;
+		}
+
+		.spindiv .spin {
+			width: 40%;
+			height: 100px;
+			background-color: yellow;
+			margin: 10px;
+			float: left;
+			transform: rotate(-40deg);
+			position: absolute;
+			top: 5%;
+			right: 0%;
+			border-top-right-radius: 60px;
+			border-bottom-left-radius: 60px;
+			animation-name: change;
+			animation-duration: .1s;
+			animation-iteration-count: infinite;
+
+		}
+
+		@keyframes change {
+			0% { background-color: yellow; }
+			30% { background-color: green; }
+			65% { background-color: pink; }
+			100% { background-color: blue; }
+		}
+
+		.spindiv .spin1 {
+			width: 40%;
+			height: 100px;
+			background-color: green;
+			margin: 10px;
+			float: left;
+			transform: rotate(38deg);
+			position: absolute;
+			top: 60%;
+			right: 0%;
+			border-top-right-radius: 60px;
+			border-bottom-left-radius: 60px;
+			animation-name: secdiv;
+			animation-duration: .1s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes secdiv {
+			0% { background-color: green; }
+			30% { background-color: pink; }
+			65% { background-color: blue; }
+			100% { background-color: yellow; }
+		}
+
+		.spindiv .spin2 {
+			width: 40%;
+			height: 100px;
+			background-color: pink;
+			margin: 10px;
+			float: left;
+			transform: rotate(-38deg);
+			position: absolute;
+			top: 60%;
+			left: 0%;
+			border-top-right-radius: 60px;
+			border-bottom-left-radius: 60px;
+			animation-name: thirddiv;
+			animation-duration: .1s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes thirddiv {
+			0% { background-color: pink; }
+			30% { background-color: blue; }
+			65% { background-color: yellow; }
+			100% { background-color: green; }
+		}
+
+		.spindiv .spin3 {
+			width: 40%;
+			height: 100px;
+			background-color: blue;
+			margin: 10px;
+			float: left;
+			transform: rotate(40deg);
+			position: absolute;
+			top: 10%;
+			left: 2%;
+			border-top-right-radius: 60px;
+			border-bottom-left-radius: 60px;
+			animation-name: fourthdiv;
+			animation-duration: .1s;
+			animation-iteration-count: infinite;
+
+		}
+
+		@keyframes fourthdiv {
+			0% { background-color: blue; }
+			30% { background-color: yellow; }
+			65% { background-color: green; }
+			100% { background-color: pink; }
+		}
+
+		.spindiv .spin4 {
+			width: 100px;
+			height: 100px;
+			background-color: transparent;
+			float: left;
+			margin: 10px;
+			transform: rotate(38deg);
+			position: absolute;
+			top: 33%;
+			left: 37%;
+			border-radius: 50%;
+			
+		     border: 10px solid #222;
+
+		     border-right: 10px solid green;
+			border-left: 10px solid blue;
+			border-top: 10px solid yellow;
+			 border-bottom: 10px solid magenta;
+
+
+			animation: move .1s linear infinite;
+			
+
+		}
+
+		@keyframes move{
+			from {transform: rotate(0deg);}
+			to{
+				transform: rotate(360deg);
+			}
+
+		}
+
+
+
+
+
+
+
+
+
+	
+
+
+	</style>
+</head>
+<body>
+
+	<div class="spindiv">
+		
+		<div class="spin"></div>
+		<div class="spin1"></div>
+		<div class="spin2"></div>
+		<div class="spin3"></div>
+		<div class="spin4"></div>
+	</div>
+
+</body>
+</html>
